@@ -95,6 +95,10 @@ width: 300px;
 
 /* TOUR DATES */
 
+.tourDates{
+    margin: 0 5vw 10vh;
+}
+
 .tourDates h2{
     text-align: center;
     padding: 20px;
@@ -125,6 +129,7 @@ footer {
     border-top: 1px solid #ccc;
     display: flex;
     justify-content: center;
+    padding: 20px;
 }
 
 footer a{

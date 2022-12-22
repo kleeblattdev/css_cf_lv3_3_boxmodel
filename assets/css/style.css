@@ -2,8 +2,133 @@
 font-family: 'Cinzel', serif;
 font-family: 'Poppins', sans-serif; */
 
+@font-face {
+    font-family: 'Cinzel' ;
+    src: url(../fonts/Cinzel/Cinzel-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins' ;
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* GLOBAL STYLE */
+
+a, h1, h2, .logo{
+    font-family: 'Cinzel', serif;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75rem;
+}
+
+/* HEADER STYLE */
+
+header{
+    height: 100vh;
+}
+
+.logo{
+    color: #999;
+    font-size: 1.5rem;
+    padding: 2vh 5vw;
+}
+
+h1{
+
+color: #fff;
+font-size: 3rem;
+text-align: center;
+line-height: 1.5;
+
+width: 300px;
+
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 80vh;
+    background: url(../img/bg-home.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* MAIN STYLE */
+
+/* TEXT SECTION */
+
+.text h2{
+    text-align: center;
+    margin: 2vh 2vw 10vh;
+}
+
+.text p{
+    text-align: center;
+    margin: 0 5vw;
+    padding-bottom: 5vh;
+}
+
+/* PICTURE SECTION */
+
+.pictures{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin: auto;
+}
+
+.pictures img{
+    width: 300px;
+    margin: 20px 30px;
+}
+
+/* TOUR DATES */
+
+.tourDates h2{
+    text-align: center;
+    padding: 20px;
+}
+
+.tourDates p{
+    line-height: 5vh;
+}
+
+.tourDates p:nth-child(-n+4)::after{
+    content: ' - SOLD OUT';
+    color: red;
+}
+
+.tourDates p:nth-child(5)::after{
+    content: ' - ONLY 4 SPOTS AVAILABLE';
+    color: red;
+}
+
+.tourDates p:nth-child(n+6)::after{
+    content: ' - AVAILABLE';
+    color: green;
+}
+
+/* FOOTER STYLE */
+
+footer {
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+}
+
+footer a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: #999;
 }
